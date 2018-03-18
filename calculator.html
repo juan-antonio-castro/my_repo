@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Calculator</title><meta charset="utf-8">
-	<script type="text/javascript">
+    <title>Calculator</title><meta charset="utf-8">
+    <script type="text/javascript">
 
-	function cube() {
-	  var num = document.getElementById("n1");
-	  num.value = Math.pow(num.value,3);
-	}
+    function cube() {
+      var num = document.getElementById("n1");
+      num.value = Math.pow(num.value,3);
+    }
+    
+    function fourth_power() {
+      var num = document.getElementById("n1");
+      num.value = Math.pow(num.value,4);
+    }
 
-	</script>
+    </script>
 </head>
 <body>
-	Number:
-	<input type="text" id="n1"><p>
+    <h1>Calculadora de Juan Antonio Castro</h1>
 
-	<button onclick="cube()"> x<sup>3</sup> </button>
-	<h1>Calculadora de Juan Antonio Castro</h1>
+    Number:
+    <input type="text" id="n1"><p>
 
+    <button onclick="cube()"> x<sup>3</sup> </button>
+    <button onclick="fourth_power()"> x<sup>4</sup> </button>
 </body>
 </html>
